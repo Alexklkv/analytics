@@ -1,0 +1,7 @@
+#createMetricForm {
+	display: none;
+}
+.input-block-level.uneditable-input {
+	width: 100%;
+	box-sizing: border-box;
+}

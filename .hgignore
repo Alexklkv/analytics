@@ -1,0 +1,5 @@
+syntax: glob
+passwords.inc.php
+config.inc.php
+an_settings
+nbproject/

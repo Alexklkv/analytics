@@ -1,0 +1,79 @@
+/**
+ * Labels
+ * @version 1.0.0
+ */
+#context_menu_edit {
+	font-weight: bold;
+}
+
+#add_dialog, #edit_dialog, #label_item {
+	display: none;
+}
+
+#add_dialog TABLE, #edit_dialog TABLE {
+	width: 100%;
+	padding-right: 5px;
+}
+
+#add_dialog INPUT, #edit_dialog INPUT {
+	width: 100%;
+}
+
+#add_dialog TEXTAREA, #edit_dialog TEXTAREA {
+	width: 100%;
+	height: 80px;
+	padding: 0 6px;
+}
+
+#service_search {
+	height: 22px;
+}
+
+#pages_content {
+	text-align: center;
+	color: green;
+	padding: 10px;
+}
+
+#context_menu_edit {
+	font-weight: bold;
+}
+
+.dialog_form {
+	margin-top: 7px;
+}
+
+#change_defaults {
+	color: #0066ff;
+}
+
+#date_filter {
+	text-align: center;
+}
+
+#edit_date, #add_date {
+	width: 206px !important;
+}
+.hidden-button {
+	display: none;
+}
+
+.errors {
+	padding-left: 4px;
+}
+
+#labels_table_length {
+	margin-bottom: 10px;
+}
+
+#labels_table_length SELECT {
+	height: 22px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
+#labels_table_wrapper {
+	margin-top: 10px;
+}

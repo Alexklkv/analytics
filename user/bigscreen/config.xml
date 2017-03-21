@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lists>
+    <list name="bottle">
+        <line
+            service="1"
+            report="counters_dau"
+            chart="0"
+            type="0"
+            lineName="DAU Общее"
+            axisTitle="Количество игроков"
+	    showLast="0"
+        />
+        <line
+            service="1"
+            report="finance_arpu"
+            chart="0"
+            type="0"
+            lineName="ARPU Общее"
+            axisTitle="Средний платёж всех"
+	    showLast="0"
+        />
+        <line
+            service="1"
+            report="finance_arppu"
+            chart="0"
+            type="0"
+            lineName="ARPPU Общее"
+            axisTitle="Средний платёж платящих"
+	    showLast="0"
+        />
+        <line
+            service="1"
+            report="payments_all"
+            chart="0"
+            type="0"
+            lineName="Сумма всех платежей"
+            axisTitle="Платежи в игровой валюте"
+            show_sum="1"
+	    showLast="0"
+        />
+	<line
+            service="1"
+            report="players_retention"
+            chart="0"
+            type="0"
+            lineName="Возвращения на следующий день"
+            axisTitle="Процент игроков"
+	    showLast="0"
+        />
+    </list>
+    <list name="squirrels">
+        <line
+            service="2"
+            report="counters_dau"
+            chart="0"
+            type="0"
+            lineName="DAU Общее"
+            axisTitle="Количество игроков"
+	    showLast="0"
+        />
+	<line
+            service="2"
+            report="finance_arpu"
+            chart="0"
+            type="0"
+            lineName="ARPU Общее"
+            axisTitle="Средний платёж всех"
+	    showLast="0"
+        />
+        <line
+            service="2"
+            report="finance_arppu"
+            chart="0"
+            type="0"
+            lineName="ARPPU Общее"
+            axisTitle="Средний платёж платящих"
+	    showLast="0"
+        />
+        <line
+            service="2"
+            report="payments_all"
+            chart="0"
+            type="0"
+            lineName="Сумма всех платежей"
+            axisTitle="Платежи в игровой валюте"
+            show_sum="1"
+	    showLast="0"
+        />
+    </list>
+</lists>

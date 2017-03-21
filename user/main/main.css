@@ -1,0 +1,88 @@
+/**
+ * Common
+ * @version 1.0.0
+ */
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	border: none;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 0px;
+}
+
+form {
+	margin: 0px;
+}
+
+textarea {
+	padding: 0px;
+	margin: 0px;
+}
+
+input[type="checkbox"],input[type="radio"] {
+	margin: 0px;
+	vertical-align: baseline;
+}
+
+.small_link {
+	font-size: 12px;
+}
+
+.errors {
+	margin-bottom: 10px;
+	display: none;
+	color: red;
+}
+
+.content {
+	width: 100%;
+}
+
+.content_zone {
+	vertical-align: top;
+	padding: 0px 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.center {
+	text-align: center;
+}
+
+.ui-dialog-title {
+	font-size: 12px !important;
+}
+
+.ui-datepicker {
+	line-height: 20px !important;
+}
+
+.ui-datepicker-month, .ui-datepicker-year {
+	height: 19px !important;
+	margin-bottom: 4px !important;
+	padding: 1px !important;
+}
+
+.navbar {
+	margin-bottom: 10px;
+}
+
+.navbar-inner {
+	border-radius: 0px;
+	padding-left: 10px;
+}
+
+.navbar .brand {
+	float: right;
+	padding-right: 0px;
+}
+
+.input-append, .input-prepend {
+	margin-bottom: 0px;
+}

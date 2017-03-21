@@ -1,0 +1,25 @@
+body {
+	overflow: hidden;
+}
+#chartdiv {
+	width: 1920px;
+	height: 980px;
+}
+#lineName {
+	font-size: 55px;
+	font-weight: bold;
+	height: 100px;
+	float: left;
+	margin-left: 60px;
+	line-height: normal;
+	color: #326195;
+}
+#currentValue {
+	font-size: 55px;
+	font-weight: bold;
+	height: 100px;
+	float: right;
+	margin-right: 15px;
+	line-height: normal;
+	color: #326195;
+}

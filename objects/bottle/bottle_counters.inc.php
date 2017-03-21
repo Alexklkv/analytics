@@ -1,0 +1,437 @@
+<?php
+
+namespace Bottle;
+
+class Counters
+{
+	const ONLINE_ALL = 0;
+	const ONLINE_NET = 1;
+	const ONLINE_AGE = 2;
+	const ONLINE_MEN = 95;
+	const ONLINE_WOMEN = 96;
+	const ONLINE_APPLE = 237;
+	const ONLINE_GOOGLE = 238;
+	const ONLINE_DEVICES = 120;
+	const ONLINE_NET_DEVICES = 121;
+	const ONLINE_AGE_DEVICES = 138;
+	const ONLINE_MEN_DEVICES = 139;
+	const ONLINE_WOMEN_DEVICES = 140;
+
+	const DAU_NEW_ALL = 300;
+	const DAU_NEW_NET = 301;
+	const DAU_NEW_AGE = 302;
+	const DAU_NEW_SEX = 303;
+	const DAU_NEW_DEVICE = 304;
+	const DAU_NEW_VK_AGE = 305;
+	const DAU_NEW_MM_AGE = 306;
+	const DAU_NEW_OK_AGE = 307;
+	const DAU_NEW_FB_AGE = 308;
+	const DAU_NEW_MB_AGE = 309;
+	const DAU_NEW_FS_AGE = 310;
+	const DAU_NEW_RG_AGE = 311;
+	const DAU_NEW_IM_AGE = 369;
+	const DAU_NEW_EN_AGE = 396;
+	const DAU_NEW_REFERRER = 312;
+	const DAU_NEW_TAG = 353;
+	const DAU_NEW_PAYING = 364;
+
+	const WAU_ALL = 8;
+	const WAU_NET = 99;
+	const WAU_AGE = 100;
+	const WAU_SEX = 101;
+	const WAU_DEVICE = 123;
+	const WAU_VK_AGE = 188;
+	const WAU_MM_AGE = 189;
+	const WAU_OK_AGE = 190;
+	const WAU_FB_AGE = 191;
+	const WAU_MB_AGE = 192;
+	const WAU_FS_AGE = 193;
+	const WAU_RG_AGE = 194;
+	const WAU_IM_AGE = 370;
+	const WAU_EN_AGE = 397;
+	const WAU_PAYING = 401;
+
+	const WAU_NEW_ALL = 376;
+	const WAU_NEW_NET = 377;
+	const WAU_NEW_AGE = 378;
+	const WAU_NEW_SEX = 379;
+	const WAU_NEW_DEVICE = 380;
+	const WAU_NEW_VK_AGE = 381;
+	const WAU_NEW_MM_AGE = 382;
+	const WAU_NEW_OK_AGE = 383;
+	const WAU_NEW_FB_AGE = 384;
+	const WAU_NEW_MB_AGE = 385;
+	const WAU_NEW_FS_AGE = 386;
+	const WAU_NEW_RG_AGE = 387;
+	const WAU_NEW_IM_AGE = 388;
+	const WAU_NEW_EN_AGE = 398;
+	const WAU_NEW_REFERRER = 389;
+	const WAU_NEW_TAG = 390;
+	const WAU_NEW_PAYING = 391;
+
+	const MAU_ALL = 9;
+	const MAU_NET = 25;
+	const MAU_AGE = 41;
+	const MAU_SEX = 40;
+	const MAU_DEVICE = 124;
+	const MAU_VK_AGE = 181;
+	const MAU_MM_AGE = 182;
+	const MAU_OK_AGE = 183;
+	const MAU_FB_AGE = 184;
+	const MAU_MB_AGE = 185;
+	const MAU_FS_AGE = 186;
+	const MAU_RG_AGE = 187;
+	const MAU_IM_AGE = 371;
+	const MAU_EN_AGE = 399;
+	const MAU_TAG = 375;
+
+	const MAU_NEW_ALL = 316;
+	const MAU_NEW_NET = 317;
+	const MAU_NEW_AGE = 318;
+	const MAU_NEW_SEX = 319;
+	const MAU_NEW_DEVICE = 320;
+	const MAU_NEW_VK_AGE = 322;
+	const MAU_NEW_MM_AGE = 323;
+	const MAU_NEW_OK_AGE = 324;
+	const MAU_NEW_FB_AGE = 325;
+	const MAU_NEW_MB_AGE = 326;
+	const MAU_NEW_FS_AGE = 327;
+	const MAU_NEW_RG_AGE = 328;
+	const MAU_NEW_IM_AGE = 372;
+	const MAU_NEW_EN_AGE = 400;
+	const MAU_NEW_REFERRER = 329;
+	const MAU_NEW_TAG = 355;
+	const MAU_NEW_PAYING = 365;
+
+	const BOTTLES_FLOW = 18;
+	const BOTTLES_FREE = 209;
+	const BOTTLES_PAID = 363;
+
+	const WAITED_ROOMS = 20;
+	const PACKET_BYTES = 21;
+
+	const BANK_OPENS = 26;
+	const BANK_PURCHASE = 27;
+
+	const RETENTION_ALL = 42;
+	const RETENTION_NET = 43;
+	const RETENTION_SEX = 44;
+	const RETENTION_AGE = 45;
+	const RETENTION_DEVICE = 236;
+	const RETENTION_REFERRER = 240;
+	const RETENTION_TAG = 354;
+	const RETENTION_PAYING = 356;
+
+	const EMPTY_USERS_ALL = 33;
+	const EMPTY_USERS_NET = 58;
+	const EMPTY_USERS_AGE = 59;
+	const EMPTY_USERS_SEX = 60;
+	const EMPTY_USERS_TAG = 61;
+
+	const REJECTIONS_ALL = 62;
+	const REJECTIONS_NET = 63;
+	const REJECTIONS_AGE = 64;
+	const REJECTIONS_SEX = 65;
+	const REJECTIONS_TAG = 66;
+
+	const INVITES_COUNT = 72;
+	const INVITE_REWARDED = 74;
+	const INVITE_HIDES = 75;
+
+	const DAU_BOTTLE = 76;
+	const DAU_SEARCH = 78;
+	const DAU_ROOM = 195;
+	const DAU_ROOM_OWN = 196;
+	const DAU_PROFILE = 246;
+	const DAU_CHAT = 247;
+	const DAU_RATING = 248;
+	const DAU_RATING_FORBES = 296;
+	const DAU_RATING_PETS = 297;
+	const DAU_RATING_MANSIONS = 298;
+	const DAU_RATING_WEDLOCKS = 299;
+	const DAU_WEDDING = 249;
+	const DAU_ACHIEVEMENT = 250;
+	const DAU_FRIENDS = 268;
+	const DAU_MESSAGES = 269;
+	const DAU_MAFIA = 270;
+
+	const GIFT_SCREEN = 80;
+	const HEART_SCREEN = 81;
+	const GIFT_FRIEND = 82;
+	const HEART_FRIEND = 83;
+	const GIFT_ADMIRE = 84;
+	const HEART_ADMIRE = 85;
+	const GIFT_ACT = 86;
+	const HEART_ACT = 87;
+
+	const BALANCE_AVERAGE_OLD = 93;
+	const BALANCE_USED = 373;
+	const BALANCE_AVERAGE = 495;
+
+	const NEWBIE_DEVICE = 127;
+
+	const HEARTS_RATED = 128;
+	const HEARTS_UNRATED = 129;
+
+	const GIFTS_RATED = 130;
+	const GIFTS_UNRATED = 131;
+	const GIFTS_CATEGORY = 256;
+	const GIFTS_DIFFERET = 392;
+
+	const WEDDING_COUNT = 132;
+	const WEDDING_COUNT_CAKE = 133;
+	const WEDDING_COUNT_ITEMS = 134;
+
+	const WEDDING_BOTTLES = 135;
+	const WEDDING_BOTTLES_CAKE = 136;
+	const WEDDING_BOTTLES_ITEMS = 137;
+	const WEDDING_BOTTLES_HAPPY = 159;
+
+	const MARRIED = 141;
+	const ADMIRED = 142;
+
+	const GAME_TIME_ALL = 143;
+	const GAME_TIME_NET = 144;
+	const GAME_TIME_AGE = 145;
+	const GAME_TIME_SEX = 146;
+	const GAME_TIME_DEVICE = 147;
+
+	const GAME_COUNT_ALL = 148;
+	const GAME_COUNT_NET = 149;
+	const GAME_COUNT_AGE = 150;
+	const GAME_COUNT_SEX = 151;
+	const GAME_COUNT_DEVICE = 152;
+
+	const GAME_AVG_ALL = 153;
+	const GAME_AVG_NET = 154;
+	const GAME_AVG_AGE = 155;
+	const GAME_AVG_SEX = 156;
+	const GAME_AVG_DEVICE = 157;
+
+	const TOTAL_AVG_ALL = 417;
+	const TOTAL_AVG_NET = 418;
+	const TOTAL_AVG_AGE = 419;
+	const TOTAL_AVG_SEX = 420;
+	const TOTAL_AVG_DEVICE = 421;
+
+	const POINTS_ALL = 158;
+
+	const ACHIEVE_ALL = 165;
+	const ACHIEVE_TYPE = 166;
+	const ACHIEVE_POST = 167;
+
+	const COLLECTION_PICKUP = 168;
+	const COLLECTION_AWARD = 169;
+	const COLLECTION_PAYMENT = 170;
+	const COLLECTION_GIFT = 171;
+	const COLLECTION_ASSEMBLE = 172;
+
+	const VERIFICATIONS = 173;
+
+	const ROOM_GUESTS = 205;
+	const ROOM_GUESTS_COUNT = 206;
+
+	const PAYMENT_BOTTLES = 217;
+	const PAYMENT_VIP = 218;
+	const PAYMENT_RICH = 219;
+
+	const IOS_HEARTS = 220;
+	const IOS_GIFTS = 221;
+	const ANDROID_HEARTS = 222;
+	const ANDROID_GIFTS = 223;
+
+	const STATUS_GIFT_UNLOCKED = 229;
+
+	const INVITES_CLICK = 230;
+
+	const DEVICE_REGISTER_PAYMENT = 235;
+
+	const PUZZLE_PICKUP = 330;
+	const PUZZLE_AWARD = 331;
+	const PUZZLE_PAYMENT = 332;
+	const PUZZLE_GIFT = 333;
+	const PUZZLE_ASSEMBLE = 334;
+
+	const OFFERS_COMPLETED = 241;
+	const OFFERS_CANCELLED = 242;
+	const OFFERS_PLAYERS = 243;
+
+	const RESOLUTION = 244;
+	const RESOLUTION_SURVEY = 245;
+
+	const ANIMAL_ACT_FREE_SELF = 252;
+	const ANIMAL_ACT_FREE_OTHER = 253;
+
+	const LEFT_MENU = 257;
+	const LEFT_MENU_VIP = 258;
+
+	const EVENT_ITEMS_ADD = 265;
+	const EVENT_ITEMS_TRANSFER = 259;
+	const EVENT_ITEMS_COLLECT = 260;
+	const EVENT_KEYS_BUYINGS = 266;
+	const EVENT_KEYS_FIRST = 267;
+
+	const ANNOUNCEMENT_MOBILE = 274;
+	const START_BUTTON = 275;
+
+	const STICKERS_USAGE_PAID = 277;
+	const STICKERS_USAGE_FREE = 280;
+	const STICKERS_CERT_USE = 278;
+	const STICKERS_CERT_TRANSFER = 279;
+
+	const VIP_SMILES = 285;
+
+	const CHAT_MESSAGE_LENGTH = 289;
+	const WHISPER_MESSAGE_LENGTH = 290;
+
+	const ROOM_COUNT_BOTTLE = 335;
+	const ROOM_COUNT_APARTMENT = 336;
+	const ROOM_COUNT_WEDDING = 337;
+
+	const PAYMENTS_HOURLY = 344;
+
+	const MAFIA_EXITS = 347;
+	const MAFIA_HEALINGS = 348;
+	const MAFIA_KILLS = 349;
+	const MAFIA_PLAYERS_IN_ROOM = 350;
+	const MAFIA_WINS = 351;
+	const MAFIA_ROUND_TIME = 352;
+
+	const VIP_COUNT = 357;
+
+	const DIALOG_OFFER_PAYMENT = 358;
+
+	const QIWI_BANNER_SHOW = 359;
+	const QIWI_BANNER_CLICK = 360;
+	const QIWI_DIALOG_SHOW = 361;
+	const QIWI_DIALOG_CLICK = 362;
+
+	const PHOTO_SHOWS_FLOW = 367;
+	const PHOTO_SHOWS_FREE = 368;
+
+	const KISSES_INACTIVE = 374;
+
+	const NOTIFICATIONS = 393;
+	const IGNORES = 394;
+
+	const REQUESTS_COUNT = 395;
+
+	const TREE_POINTS = 402;
+	const TREE_STATS = 403;
+	const TREE_LEVELUPS = 404;
+
+	const BANS = 405;
+
+	// daily new users
+	const DNU_TREE_LEVEL = 406;
+	const DNU_GAME_TIME = 407;
+	const DNU_RATES_VIEWS = 408;
+	const DNU_KISSES_FAILED = 409;
+	const DNU_KISSES = 410;
+
+	// weekly new users
+	const WNU_TREE_LEVEL = 411;
+	const WNU_GAME_TIME = 412;
+	const WNU_RATES_VIEWS = 413;
+	const WNU_KISSES_FAILED = 414;
+	const WNU_KISSES = 415;
+	const PROGRESS_BAR = 416;
+
+	const COUNT_WALL_REQUEST = 422;
+	const COUNT_WALL_POSTED = 423;
+
+	const DAU_MAFIA_A = 425;
+	const DAU_MAFIA_B = 426;
+	const MAFIA_FINISHED_GAMES_A = 427;
+	const MAFIA_FINISHED_GAMES_B = 428;
+	const MAFIA_ROUND_TIME_A = 429;
+	const MAFIA_ROUND_TIME_B = 430;
+	const MAFIA_AWARDS_A = 431;
+	const MAFIA_AWARDS_B = 432;
+
+	const PROGRESS_BAR_TASKS_COMPLETED_A = 433;
+	const PROGRESS_BAR_TASKS_COMPLETED_B = 434;
+
+	const RANDOM_BONUS_SENT = 435;
+
+	const VIRALS_FINISHED_ACTION = 436;
+	const VIRALS_FINISHED_QUEST = 437;
+
+	const CLIENT_INVITES = 438;
+
+	const PENDANT_NOTIFICATIONS = 440;
+	const KISSES_NOTIFICATIONS = 456;
+
+	const BANK_SHOWS_PAYMENT = 441;
+
+	const PUSH_TYPE = 442;
+	const PUSH_DEVICE = 443;
+	const PUSH_GENDER = 444;
+	const PUSH_AGE = 445;
+	const PUSH_API = 446;
+	const PUSH_REGION = 447;
+	const PUSH_PAYMENT = 448;
+	const PUSH_GAME_TIME_DAILY = 449;
+	const PUSH_GAME_COUNT_DAILY = 450;
+	const PUSH_AVG_GAME_TIME_DAILY = 451;
+	const PUSH_AVG_GAME_TIME_WEEKLY = 452;
+	const DAU_PUSH = 453;
+	const WAU_PUSH = 454;
+	const PUSH_TIME = 455;
+
+	const SUBSCRIBE_FB_BUYINGS = 456;
+
+	const DEV_GAME_TIME = 457;
+	const DEV_GAME_COUNT = 458;
+	const DEV_KISSES = 459;
+	const DEV_HEARTS = 460;
+	const DEV_GIFTS = 461;
+	const DEV_MESSAGES = 462;
+
+	const EASTER_EGGS = 463;
+	const EASTER_EGGS_PAYING = 464;
+	const EASTER_PLAYERS = 465;
+	const EASTER_PLAYERS_PAYING = 466;
+
+	const BB_PLAYERS_SEX = 467;
+	const BB_PLAYERS_AGE = 468;
+	const BB_PLAYERS_SEX_PAYING = 469;
+	const BB_PLAYERS_AGE_PAYING = 470;
+
+	const BB_REFFERER_SEX = 471;
+	const BB_REFFERER_AGE = 472;
+	const BB_REFFERER_SEX_PAYING = 473;
+	const BB_REFFERER_AGE_PAYING = 474;
+
+	const BOX_MUTUAL_DIALOG = 475;
+
+	const INVITE_DIALOG_SHOW = 476;
+	const CHESTS_KEYS_USED = 477;
+	const CHESTS_KEYS_GOT = 478;
+	const CHESTS_OPENED = 479;
+	const CHESTS_AWARDS = 480;
+
+	const COUNT_WELL_BUYINGS = 481;
+	const COUNT_WELL_BUYINGS_SEX = 482;
+	const COUNT_WELL_BUYINGS_AGE = 483;
+	const COUNT_WELL_CHAIN_LEN = 484;
+
+	const MONEY_BOX_OPENED = 485;
+	const MONEY_BOX_OPENED_SEX = 486;
+	const MONEY_BOX_OPENED_AGE = 487;
+	const MONEY_BOX_FILLED = 488;
+
+	const WAKEUP_REFERRER = 489;
+
+	const PLAYERS_LEVEL_UPS = 490;
+	const PLAYERS_TODAYS_LEVEL_UPS = 491;
+
+	const BOX_MUTABLE_BUYINGS = 492;
+
+	const ROULETTE_KISS = 493;
+	const ROULETTE_ANSWER = 494;
+
+	const MAX_TYPE = 496;
+}
+
+?>
